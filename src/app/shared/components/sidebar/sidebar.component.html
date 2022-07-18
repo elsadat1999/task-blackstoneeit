@@ -1,0 +1,35 @@
+<div class="sidebar">
+  <div class="logo">
+     <h1>Logo</h1>
+  </div>
+  <div class="menu">
+   <h2 class="menu_title">Menu</h2>
+   <ul class="menu_list">
+    <ng-container  *ngFor="let item of menu" >
+        <li class="menu_list_item" [ngClass]="{'active':item.active}">
+            <i [class]="item.icon"></i>
+           <p>{{item.name}}</p>
+        </li>
+    </ng-container>
+   </ul>
+   <div class="account-info">
+    <div class="account">
+        <h4 class="account_title">Account</h4>
+        <i class="fa-solid fa-chevron-down"></i>
+        </div>
+     <div class="account_data">
+       <div class="account_avatar">
+          <img src="assets/avatar.jpg">
+       </div>
+       <div class="account_info">
+        <h5 class="account_name">
+            Michael
+        </h5>
+        <p class="account_username">
+            @michaelcoo_
+        </p>
+       </div>
+     </div>
+   </div>
+  </div>
+</div>
