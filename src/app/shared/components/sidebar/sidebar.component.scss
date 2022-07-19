@@ -1,5 +1,5 @@
 .sidebar {
-  width: 230px;
+  width: 32vmin;
   background-color: #fff;
   min-height: 100vh;
 
@@ -16,7 +16,7 @@
 
   .menu {
     &_title {
-      margin-top:25px;
+      margin-top: 25px;
       color: var(--text-color);
       font-size: 14px;
       padding: 0 40px;
@@ -34,6 +34,10 @@
         align-items: center;
         padding: 8px 40px;
         font-size: 12px;
+        cursor: pointer;
+        &:hover {
+          color: var(--text-color);
+        }
         i {
           margin-right: 10px;
         }
@@ -54,20 +58,19 @@
     padding: 0 40px;
     .account {
       margin-top: 25px;
-
+      cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: space-between;
       color: var(--text-color);
       margin-bottom: 25px;
-      i{
+      i {
         font-size: 12px;
       }
       &_title {
         font-size: 14px;
       }
       &_avatar {
-      
         margin-right: 15px;
         width: 40px;
         height: 40px;
@@ -78,17 +81,17 @@
           height: 100%;
         }
       }
-      
+
       &_data {
         display: flex;
-        align-items: center;        
+        align-items: center;
       }
-      &_name{
+      &_name {
         font-size: 14px;
-        font-weight: 500;  
-        color: var(--text-color); 
+        font-weight: 500;
+        color: var(--text-color);
       }
-      &_username{
+      &_username {
         margin-top: 2px;
         color: #a4b6e1;
         font-size: 12px;

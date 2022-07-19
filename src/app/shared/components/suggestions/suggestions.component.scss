@@ -1,0 +1,27 @@
+.suggestions-container {
+  .suggestions {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --text-color: #273b70;
+
+    &_title {
+      color: var(--text-color);
+      text-transform: capitalize;
+      font-size: 14px;
+    }
+    .see-more {
+      background: transparent;
+      border: 0;
+      color: #a974ff;
+      font-weight: 500;
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+.suggestion-accounts{
+    border-bottom: 1px solid #d8e4f2;
+    padding-bottom: 20px;
+}
+}

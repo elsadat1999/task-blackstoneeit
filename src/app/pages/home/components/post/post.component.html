@@ -10,8 +10,13 @@
       <label class="post_username">Dean Winchester</label>
     </div>
     <div class="post_buttons">
-      <button>
+      <button [ngClass]="{active}" (click)="increaseLikes()">
         <i class="fa-solid fa-heart"></i>
+        <p>{{like}}</p>
+      </button>
+
+      <button>
+        <i class="fa-solid fa-comment-dots"></i>
         <p>22</p>
       </button>
     </div>

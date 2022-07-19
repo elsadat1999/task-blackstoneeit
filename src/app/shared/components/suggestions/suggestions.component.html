@@ -1,0 +1,13 @@
+<div class="suggestions-container">
+  <div class="suggestions">
+    <h3 class="suggestions_title">suggestions for you</h3>
+    <button class="see-more">See All</button>
+  </div>
+  <div class="suggestion-accounts">
+    <app-suggestion-account
+      [avatar]="item.img"
+      [username]="item.name"
+      *ngFor="let item of user"
+    ></app-suggestion-account>
+  </div>
+</div>

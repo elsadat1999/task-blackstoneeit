@@ -1,27 +1,26 @@
 <div class="container">
-  <div class="story_container">
-    <ng-container *ngFor="let item of [1, 2, 3, 4, 5, 6, 7]; let i = index">
-      <app-story [fixed]="i == 0" [active]="i > 2"></app-story>
+  <div class="story_container custom-scrollbar">
+    <ng-container *ngFor="let item of user; let i = index">
+      <app-story [avatar]="item.img" [username]="item.name" [fixed]="i == 0" [active]="i > 2"></app-story>
     </ng-container>
   </div>
   <div class="feeds">
     <label class="feeds_label">Feeds</label>
     <div class="tabs">
-        <button class="tab">
-           All
-        </button>
-        <button class="tab">
-            following
-         </button>
-         <button class="tab">
-            newest
-         </button>
-         <button class="tab active">
-            popular
-         </button>
+      <button class="tab">All</button>
+      <button class="tab">following</button>
+      <button class="tab">newest</button>
+      <button class="tab active">popular</button>
     </div>
   </div>
   <div class="postes">
-    <app-post [avatar]="'assets/avatar.jpg'" [image]="'assets/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg'"></app-post>
+    <app-post
+      *ngFor="let item of posts"
+      [avatar]="'assets/avatar.jpg'"
+      [image]="item.img"
+      [like]="item.like"
+      [active]="item.activeLike"
+      (increaseLike)="increaseLike(item)"
+    ></app-post>
   </div>
 </div>

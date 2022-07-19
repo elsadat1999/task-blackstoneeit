@@ -1,11 +1,11 @@
 <div class="story" [ngClass]="{fixed,active}">
   <div class="story_avatar">
-    <img src="assets/avatar.jpg" />
+    <img [src]="avatar" />
     <div class="story_fixed_add">
         <i class="fa-solid fa-plus"></i>
       </div>
   </div>
 
   <label *ngIf="fixed"  class="story_username"> You </label>
-  <label *ngIf="!fixed"  class="story_username"> Theodore </label>
+  <label *ngIf="!fixed"  class="story_username"> {{username}} </label>
 </div>
