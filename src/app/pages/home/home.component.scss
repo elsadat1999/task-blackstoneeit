@@ -1,6 +1,7 @@
 .container{
     padding: 0 20px;
 }
+
 .story_container{
     display: flex;
     align-items: center;
@@ -9,5 +10,31 @@
     app-story{
         display: block;
         margin: 0 10px;
+    }
+}
+.feeds{
+    --text-color: #2e4175;
+    --active-color: #a974ff;
+    
+    padding:20px 0;
+    display: flex;
+    justify-content: space-between;
+    &_label{
+        color: var(--text-color);
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .tabs{
+        .tab{
+            &.active{
+                color: var(--active-color); 
+            }
+            text-transform: capitalize;
+            color: #a9bae3;
+            background: transparent;
+            border: 0;
+            font-weight: 500;
+            padding: 0 10px;
+        }
     }
 }

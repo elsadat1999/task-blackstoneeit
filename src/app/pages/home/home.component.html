@@ -4,4 +4,24 @@
       <app-story [fixed]="i == 0" [active]="i > 2"></app-story>
     </ng-container>
   </div>
+  <div class="feeds">
+    <label class="feeds_label">Feeds</label>
+    <div class="tabs">
+        <button class="tab">
+           All
+        </button>
+        <button class="tab">
+            following
+         </button>
+         <button class="tab">
+            newest
+         </button>
+         <button class="tab active">
+            popular
+         </button>
+    </div>
+  </div>
+  <div class="postes">
+    <app-post [avatar]="'assets/avatar.jpg'" [image]="'assets/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg'"></app-post>
+  </div>
 </div>
